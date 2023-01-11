@@ -1,26 +1,19 @@
 {
-  "name": "online_chess_frontend",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "name": "online-war-chess-frontend",
+  "version": "0.0.0",
+  "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "http-server ."
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/shung-yang/online_chess_frontend.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/shung-yang/online_chess_frontend/issues"
-  },
-  "homepage": "https://github.com/shung-yang/online_chess_frontend#readme",
   "dependencies": {
-    "phaser": "^3.55.2"
+    "vue": "^3.2.45",
+    "vue-router": "^4.1.6"
   },
   "devDependencies": {
-    "http-server": "^14.1.1"
+    "@vitejs/plugin-vue": "^4.0.0",
+    "@vitejs/plugin-vue-jsx": "^3.0.0",
+    "vite": "^4.0.0"
   }
 }
