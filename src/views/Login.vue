@@ -14,6 +14,8 @@
         <input v-model="inputs.password" type="password">
       </div>
       <button id="login-submit" @click="login(inputs, $router)">Login</button>
+      <button id="change-account-info" @click="changeAccountInfo">change Account Info</button>
+      <button id="test-auth" @click="verifyToken()">test verify token</button>
     </div>
   </div>
   <div>{{ inputs }}</div>>
@@ -21,7 +23,7 @@
 
 <script>
 import { defineComponent, reactive } from "vue";
-import { login } from "../functions/user";
+import { login, changeAccountInfo, verifyToken } from "../functions/user";
 
 export default defineComponent({
   setup(props) {
@@ -33,6 +35,8 @@ export default defineComponent({
     return {
       inputs,
       login,
+      changeAccountInfo,
+      verifyToken,
     }
   }
 })
